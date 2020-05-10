@@ -39,14 +39,12 @@ app.post('/api/email', (req, res, next) => {
 
     sendGrid.send(msg)
         .then(result => {
-
+            console.log('result: ', result);
             res.status(200).json({
                 success: true
             });
-
         })
         .catch(err => {
-
             console.log('error: ', err);
             res.status(401).json({
                 success: false
