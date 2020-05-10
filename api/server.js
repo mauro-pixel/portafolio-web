@@ -29,11 +29,11 @@ app.post('/api/email', (req, res, next) => {
 
     console.log(req.body);
 
-    sendGrid.setApiKey('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');
+    sendGrid.setApiKey('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');
     const msg = {
-        to: 'garrettlove5346@gmail.com',
+        to: 'espinal831@gmail.com',
         from: req.body.email,
-        subject: 'Website Contact',
+        subject: 'Website Contacto',
         text: req.body.message
     }
 
